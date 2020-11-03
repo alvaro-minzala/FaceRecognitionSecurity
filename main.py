@@ -43,6 +43,8 @@ while True:
                 cv2.putText(cam_image, match, (top_left[0], bottom_right[1] + 30), FONT, 2, (0, 255, 0), FONT_THICKNESS)
 
             print(f"{match} has entered the house")
+        else:
+            print("Oh no, INTRUDER ALERT!")
 
     if DISPLAY_IMAGE:
         cv2.imshow("Camera Footage", cam_image)
